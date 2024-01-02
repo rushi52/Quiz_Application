@@ -1,7 +1,5 @@
 package com.rushi.quiz.controllers;
 
-
-
 import com.rushi.quiz.model.QuestionWrapper;
 import com.rushi.quiz.model.Quiz;
 import com.rushi.quiz.model.Response;
