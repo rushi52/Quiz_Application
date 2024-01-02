@@ -45,9 +45,6 @@ public class QuizService {
         }
 
         return new ResponseEntity<>(questionsfromUser,HttpStatus.OK);
-
-
-
     }
 
     public ResponseEntity<Integer> submitQuiz(Integer id, List<Response> responses) {
