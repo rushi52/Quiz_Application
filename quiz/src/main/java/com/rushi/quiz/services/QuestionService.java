@@ -8,11 +8,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 @Service
-public class QuestoinService {
+public class QuestionService {
     @Autowired
     QuestionDao questionDao;
 
@@ -38,12 +37,6 @@ public class QuestoinService {
             e.printStackTrace();
         }
         return new ResponseEntity<>(new ArrayList<>(), HttpStatus.BAD_REQUEST);
-
-
-
-//        Question save=new Question();
-//        save = questionDao.save(save);
-//        return Collections.singletonList(save);
     }
 
     public ResponseEntity<List<Question>> addQuestion(Question question) {
