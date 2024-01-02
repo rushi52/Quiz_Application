@@ -1,7 +1,5 @@
 package com.rushi.quiz.model;
 
-//import jakarta.persistence.GeneratedValue;
-//import jakarta.persistence.GenerationType;
 import lombok.Data;
 import lombok.Generated;
 import org.springframework.data.annotation.Id;
@@ -10,7 +8,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 public class Question {
     @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String questionTitle;
